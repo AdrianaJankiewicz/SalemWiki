@@ -1,0 +1,232 @@
+/* 
+#064774 - font colour for nav ul, li, dropdown content and nz, tt div. 
+#042d49 - border colour.
+rgba(210,200,191) - background colour of nav, bc, box, gr.
+rgba(4,45,73,0.2) - background colour for nav bar hover and dropdown content
+*/
+
+
+
+body {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@font-face {
+	font-family: Salemica;
+	src: url(../font/salem.woff);
+}
+
+.logo {
+    float: left;
+	display: inline-block;
+	margin-top: 5px;
+	height: 100px;
+}
+
+h1 {
+	font-family: Salemica, Engagement; 
+	line-height: 0; 
+	padding-top: 0px;
+}
+
+.x {
+	width: 50%;
+	display: inline;
+}
+
+/* ---------------- */ /* DROPDOWN MENU */ /* ---------------- */ 
+.nav {
+	background:rgba(210,200,191, 0.6);
+	border-left: 6px solid #042d49; 
+ 	border-right: 6px solid #042d49;
+	padding: 0px;
+	margin-left: 21%;
+	margin-right: 21%;
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	display:inline-block;
+	vertical-align: bottom;
+	list-style-type: none;
+	background:rgba(210,200,191, 0.5); 
+	color: #064774;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a, .dropbtn {
+	font-family: Verdana;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+    color: #064774;
+
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(4,45,73,0.2);
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(210,200,191, 0.9);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    color: #064774;
+    padding: 14px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(4,45,73,0.2); 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+/* ---------------- */  /*END OF DROPDOWN MENU */ /* ---------------- */ 
+
+.bc {
+	border-left: 6px solid #042d49; 
+ 	border-right: 6px solid #042d49;
+ 	border-bottom: 6px solid #042d49;
+ 	box-shadow: 0px 0px 5px #042d49; 
+	background:rgba(210,200,191, 0.5);
+	margin-left: 21%;
+	margin-right: 21%;
+	padding-top: 5px;
+ 	padding-bottom: 5px;
+}
+
+/* ---------------- */ /* INDEX PAGE */  /* ---------------- */ 
+.salem,
+.trailers,
+.characters,
+.news {
+	background-color: #ffffff;
+	border-left: 6px solid #042d49; 
+ 	border-right: 6px solid #042d49;
+ 	box-shadow: 0px 0px 5px #042d49; 
+	border-radius: 20px; 
+	background:rgba(210,200,191, 0.7);
+	text-align: center;
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+/* ---------------- */ /* END OF INDEX PAGE */  /* ---------------- */ 
+
+
+/* ---------------- */ /* ALL THE OTHER PAGES */  /* ---------------- */ 
+.im,
+.seasons {
+	width: 440px;
+	border-radius: 0px 0px 20px 20px; 
+	border-bottom: 5px solid #3E2930;
+	display: block;
+ 	margin: auto;
+}
+
+.nz{
+	font-family: Salemica, Engagement; 
+	line-height: 0; 
+	font-size: 60px; 
+	color: #064774; 
+	text-shadow: 1px 1px 1px #042d49; 
+	text-align: center; 
+	position: relative;
+}
+
+.gr{ 
+	font-family: Verdana; 
+	font-size: 13px; 
+	text-align: center;
+	border-radius: 10px; 
+	margin-top: 5px; 
+	color: #000;
+	border-left: 6px solid #042d49; 
+ 	border-right: 6px solid #042d49;
+ 	box-shadow: 0px 0px 5px #042d49; 
+ 	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 28%;
+	margin-right: 28%;
+	background:rgba(210,200,191, 0.7);
+}
+
+.tt{
+	font-family: Verdana; 
+	font-size: 15px; 
+	font-weight: bold; 
+	text-shadow: 1px 0px 1px #042d49; 
+	text-transform: uppercase; 
+	padding-right: 60px; 
+	color: #064774; 
+}
+
+.tx{
+	font-family: Verdana; 
+	font-size: 14px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	text-align: justify; 
+	color: #000;
+}
+
+.entity { 
+	display: inline;
+	font-size: 25px;
+	text-shadow: 1px 0px 1px #042d49; 
+	line-height: 0; 
+ }
+
+ .box {
+	background:rgba(210,200,191, 0.7);
+	border-left: 6px solid #042d49; 
+	border-radius: 20px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+ 	border-right: 6px solid #042d49;
+ 	box-shadow: 0px 0px 5px #042d49; 
+ 	padding: 20px;
+ }
+
+a {
+	color: #064774;
+}
+
+ iframe {
+ 	border: none;
+ }
+
+ footer {
+ 	font-size: 11px;
+ }
+
+/* ---------------- */ /* END */  /* ---------------- */ 
